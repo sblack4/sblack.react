@@ -2,6 +2,6 @@
 
 ## Welcome to my humble abode 
 
-Get it! Got it? Good!
+    Get it! Got it? Good!
 
-if you have python3 use `python -m http.server` to start.  
+    if you have python3 use `python -m http.server` to start.  
