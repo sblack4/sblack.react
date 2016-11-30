@@ -3,14 +3,15 @@ body {
   padding-top: 70px;
 }
 
-#vizContainer{
-    height: 80vh;
+.vizContainer{
+    position: relative;
+    overflow: auto;
 }
 
 #viz{
-    height: 80vh;
-    width:80vw;
-    overflow: visible;
+    position: relative;
+    overflow: auto;
+    width: 80vw;
 }
 
 .classRects{
