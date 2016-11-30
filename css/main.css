@@ -1,0 +1,30 @@
+body {
+  min-height: 2000px;
+  padding-top: 70px;
+}
+
+#vizContainer{
+    height: 80vh;
+}
+
+#viz{
+    height: 80vh;
+    width:80vw;
+    overflow: visible;
+}
+
+.classRects{
+    fill: aquamarine;
+    opacity: .7;
+}
+
+.classText{
+    fill: blueviolet;
+    opacity: .7;
+    font-family: sans-serif;
+}
+
+.list-group-item{
+    padding-left: 25px;
+    font-size: 14px;
+}
