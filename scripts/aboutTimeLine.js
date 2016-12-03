@@ -4,6 +4,7 @@
 
 //Global Variables
 aboutMe = {};
+aboutMe.TRANS_DUR = 2000;
 aboutMe.fields = ["Subject", "Level", "Semester"];
 aboutMe.svg = d3.select("#viz");
 aboutMe.activeFilters = {
@@ -41,24 +42,33 @@ aboutMe.makeFilters = function(data){
 //Use filters 
 
 aboutMe.filters = {
+    n_classes: function(){
+        return aboutMe.n_classes.top(n_classes);
+    },
     subject: function(){
     if(!aboutMe.activeFilters.subject){
         aboutMe.subject.filterAll();
         return aboutMe.classes;
     }else{
-        return aboutMe.subject.filterExact(aboutMe.activeFilters.subject).top(aboutMe.activeFilters.n_classes);
+        return aboutMe.subject.filterFunction(function(d){
+            return ($.inArray(d, aboutMe.activeFilters.subject)>=0) ? d : null;
+        }).top(aboutMe.activeFilters.n_classes);
     }}, 
     level: function(){
     if(!aboutMe.activeFilters.level){
         return aboutMe.classes;
     }else{
-        return aboutMe.level.filterExact(aboutMe.activeFilters.level).top(aboutMe.activeFilters.n_classes);
+        return aboutMe.level.filterFunction(function(d){
+            return ($.inArray(d, aboutMe.activeFilters.level)>=0) ? d : null;
+        }).top(aboutMe.activeFilters.n_classes);
     }},
     semester: function(){
     if(!aboutMe.activeFilters.semester){
         return aboutMe.classes;
     }else{
-        return aboutMe.semester.filterExact(aboutMe.activeFilters.semester).top(aboutMe.activeFilters.n_classes);
+        return aboutMe.semester.filterFunction(function(d){
+            return ($.inArray(d, aboutMe.activeFilters.semester)>=0) ? d : null;
+        }).top(aboutMe.activeFilters.n_classes);
     }}
 };
 
@@ -66,7 +76,10 @@ aboutMe.filters = {
 aboutMe.drawRects = function(data){
     var numElements = data.length;
     //var barHeight = 
-    aboutMe.svg.attr("height", numElements*20);
+    aboutMe.svg
+        .transition()
+        .duration(aboutMe.TRANS_DUR)
+        .attr("height", numElements*20);
     var rects =  aboutMe.svg.selectAll("rect")
         .data(data, function(d) { return d["Subject"]+"_"+d["Course"]; });
     rects.enter()
@@ -98,14 +111,14 @@ aboutMe.drawRects = function(data){
 
 //Update Data
 aboutMe.updateData = function(data){
-    console.log(data);
+    console.log("updateData ", data);
     aboutMe.drawRects(data);
 };
 
 //Populate Dropdowns
 populateDropdowns = function(){
     for(var filter in aboutMe.dropDowns){
-        console.log(filter);
+        console.log("populateDropdowns ", filter);
         $.each(aboutMe[filter].group().all(), function(){
             aboutMe.dropDowns[filter].append($("<li />").append(`<a>${this.key}</a>`));
         });
@@ -142,8 +155,3 @@ clearActiveFilters = function(clear= false){
     }
 };
 
-$('#clearFilters').click(function(e){
-    $('#filters').empty();
-    clearActiveFilters(clear=true);
-    aboutMe.updateData(aboutMe.classes);
-});
