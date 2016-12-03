@@ -7,6 +7,7 @@ body {
 .vizContainer{
     position: relative;
     overflow: auto;
+    min-height: 300px;
 }
 
 #viz{
@@ -29,4 +30,7 @@ body {
 .list-group-item{
     padding-left: 25px;
     font-size: 14px;
+}
+.btn-group-justified{
+    padding-top: 5px;
 }

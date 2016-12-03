@@ -7,7 +7,7 @@
         "Undergrad GPA": "3.35",
         "Major GPA": "3.60",
         "Classes": [{
-            "Time": "Fall 2009",
+            "Semester": "Fall 2009",
             "Subject": "BIOL",
             "Course": 103,
             "Level": "UG",
@@ -18,7 +18,7 @@
             "Quality Points": 13.32,
             "R": ""
         }, {
-            "Time": "Fall 2009",
+            "Semester": "Fall 2009",
             "Subject": "COMM",
             "Course": 101,
             "Level": "UG",
@@ -29,7 +29,7 @@
             "Quality Points": 8.01,
             "R": ""
         }, {
-            "Time": "Fall 2009",
+            "Semester": "Fall 2009",
             "Subject": "ECON",
             "Course": 103,
             "Level": "UG",
@@ -40,7 +40,7 @@
             "Quality Points": 0,
             "R": "E"
         }, {
-            "Time": "Fall 2009",
+            "Semester": "Fall 2009",
             "Subject": "ENGL",
             "Course": 101,
             "Level": "UG",
@@ -51,7 +51,7 @@
             "Quality Points": 8.01,
             "R": ""
         }, {
-            "Time": "Fall 2009",
+            "Semester": "Fall 2009",
             "Subject": "MUSI",
             "Course": 102,
             "Level": "UG",
@@ -62,7 +62,7 @@
             "Quality Points": 9.99,
             "R": ""
         }, {
-            "Time": "Spring 2010",
+            "Semester": "Spring 2010",
             "Subject": "CHEM",
             "Course": 102,
             "Level": "UG",
@@ -73,7 +73,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2010",
+            "Semester": "Spring 2010",
             "Subject": "ENGL",
             "Course": 201,
             "Level": "UG",
@@ -84,7 +84,7 @@
             "Quality Points": 6,
             "R": ""
         }, {
-            "Time": "Spring 2010",
+            "Semester": "Spring 2010",
             "Subject": "IT",
             "Course": 103,
             "Level": "UG",
@@ -95,7 +95,7 @@
             "Quality Points": 6.99,
             "R": ""
         }, {
-            "Time": "Spring 2010",
+            "Semester": "Spring 2010",
             "Subject": "PSYC",
             "Course": 100,
             "Level": "UG",
@@ -106,7 +106,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2010",
+            "Semester": "Fall 2010",
             "Subject": "HIST",
             "Course": 100,
             "Level": "UG",
@@ -117,7 +117,7 @@
             "Quality Points": 11.01,
             "R": ""
         }, {
-            "Time": "Fall 2010",
+            "Semester": "Fall 2010",
             "Subject": "IT",
             "Course": 101,
             "Level": "UG",
@@ -128,7 +128,7 @@
             "Quality Points": 5.01,
             "R": ""
         }, {
-            "Time": "Fall 2010",
+            "Semester": "Fall 2010",
             "Subject": "IT",
             "Course": 214,
             "Level": "UG",
@@ -139,7 +139,7 @@
             "Quality Points": 0,
             "R": "E"
         }, {
-            "Time": "Fall 2010",
+            "Semester": "Fall 2010",
             "Subject": "MATH",
             "Course": 108,
             "Level": "UG",
@@ -150,7 +150,7 @@
             "Quality Points": 0,
             "R": "E"
         }, {
-            "Time": "Fall 2010",
+            "Semester": "Fall 2010",
             "Subject": "STAT",
             "Course": 250,
             "Level": "UG",
@@ -161,7 +161,7 @@
             "Quality Points": 0,
             "R": "E"
         }, {
-            "Time": "Spring 2011",
+            "Semester": "Spring 2011",
             "Subject": "MKTG",
             "Course": 301,
             "Level": "UG",
@@ -172,7 +172,7 @@
             "Quality Points": 9,
             "R": ""
         }, {
-            "Time": "Spring 2011",
+            "Semester": "Spring 2011",
             "Subject": "MSOM",
             "Course": 305,
             "Level": "UG",
@@ -183,7 +183,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2011",
+            "Semester": "Spring 2011",
             "Subject": "PSYC",
             "Course": 211,
             "Level": "UG",
@@ -194,7 +194,7 @@
             "Quality Points": 9,
             "R": ""
         }, {
-            "Time": "Spring 2011",
+            "Semester": "Spring 2011",
             "Subject": "PSYC",
             "Course": 313,
             "Level": "UG",
@@ -205,7 +205,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2011",
+            "Semester": "Spring 2011",
             "Subject": "PSYC",
             "Course": 372,
             "Level": "UG",
@@ -216,7 +216,7 @@
             "Quality Points": 8.01,
             "R": ""
         }, {
-            "Time": "Fall 2011",
+            "Semester": "Fall 2011",
             "Subject": "BULE",
             "Course": 302,
             "Level": "UG",
@@ -227,7 +227,7 @@
             "Quality Points": 6,
             "R": ""
         }, {
-            "Time": "Fall 2011",
+            "Semester": "Fall 2011",
             "Subject": "ECON",
             "Course": 103,
             "Level": "UG",
@@ -238,7 +238,7 @@
             "Quality Points": 12,
             "R": "I"
         }, {
-            "Time": "Fall 2011",
+            "Semester": "Fall 2011",
             "Subject": "ECON",
             "Course": 104,
             "Level": "UG",
@@ -249,7 +249,7 @@
             "Quality Points": 9.99,
             "R": ""
         }, {
-            "Time": "Fall 2011",
+            "Semester": "Fall 2011",
             "Subject": "MATH",
             "Course": 108,
             "Level": "UG",
@@ -260,7 +260,7 @@
             "Quality Points": 9,
             "R": "I"
         }, {
-            "Time": "Fall 2011",
+            "Semester": "Fall 2011",
             "Subject": "SOM",
             "Course": 301,
             "Level": "UG",
@@ -271,7 +271,7 @@
             "Quality Points": 6.99,
             "R": ""
         }, {
-            "Time": "Spring 2012",
+            "Semester": "Spring 2012",
             "Subject": "ACCT",
             "Course": 203,
             "Level": "UG",
@@ -282,7 +282,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2012",
+            "Semester": "Spring 2012",
             "Subject": "ECON",
             "Course": 306,
             "Level": "UG",
@@ -293,7 +293,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2012",
+            "Semester": "Spring 2012",
             "Subject": "ENGH",
             "Course": 302,
             "Level": "UG",
@@ -304,7 +304,7 @@
             "Quality Points": 11.01,
             "R": ""
         }, {
-            "Time": "Spring 2012",
+            "Semester": "Spring 2012",
             "Subject": "OM",
             "Course": 210,
             "Level": "UG",
@@ -315,7 +315,7 @@
             "Quality Points": 9.32,
             "R": ""
         }, {
-            "Time": "Spring 2012",
+            "Semester": "Spring 2012",
             "Subject": "PSYC",
             "Course": 317,
             "Level": "UG",
@@ -326,7 +326,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Summer 2012",
+            "Semester": "Summer 2012",
             "Subject": "ECON",
             "Course": 309,
             "Level": "UG",
@@ -337,7 +337,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Summer 2012",
+            "Semester": "Summer 2012",
             "Subject": "ECON",
             "Course": 311,
             "Level": "UG",
@@ -348,7 +348,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Summer 2012",
+            "Semester": "Summer 2012",
             "Subject": "ECON",
             "Course": 412,
             "Level": "UG",
@@ -359,7 +359,7 @@
             "Quality Points": 11.01,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "ECON",
             "Course": 310,
             "Level": "UG",
@@ -370,7 +370,7 @@
             "Quality Points": 9,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "ECON",
             "Course": 321,
             "Level": "UG",
@@ -381,7 +381,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "ECON",
             "Course": 335,
             "Level": "UG",
@@ -392,7 +392,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "ECON",
             "Course": 390,
             "Level": "UG",
@@ -403,7 +403,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "PSYC",
             "Course": 460,
             "Level": "UG",
@@ -414,7 +414,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2012",
+            "Semester": "Fall 2012",
             "Subject": "STAT",
             "Course": 350,
             "Level": "UG",
@@ -425,7 +425,7 @@
             "Quality Points": 9,
             "R": ""
         }, {
-            "Time": "Spring 2013",
+            "Semester": "Spring 2013",
             "Subject": "ECON",
             "Course": 492,
             "Level": "UG",
@@ -436,7 +436,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Summer 2013",
+            "Semester": "Summer 2013",
             "Subject": "ECON",
             "Course": 345,
             "Level": "UG",
@@ -447,7 +447,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Summer 2013",
+            "Semester": "Summer 2013",
             "Subject": "MATH",
             "Course": 105,
             "Level": "UG",
@@ -458,7 +458,7 @@
             "Quality Points": 16,
             "R": ""
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "ECON",
             "Course": 308,
             "Level": "UG",
@@ -469,7 +469,7 @@
             "Quality Points": 9.99,
             "R": ""
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "IT",
             "Course": 106,
             "Level": "UG",
@@ -480,7 +480,7 @@
             "Quality Points": 9,
             "R": ""
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "IT",
             "Course": 214,
             "Level": "UG",
@@ -491,7 +491,7 @@
             "Quality Points": 9,
             "R": "I"
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "MATH",
             "Course": 113,
             "Level": "UG",
@@ -502,7 +502,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "MATH",
             "Course": 125,
             "Level": "UG",
@@ -513,7 +513,7 @@
             "Quality Points": 0,
             "R": "E"
         }, {
-            "Time": "Fall 2013",
+            "Semester": "Fall 2013",
             "Subject": "STAT",
             "Course": 250,
             "Level": "UG",
@@ -524,7 +524,7 @@
             "Quality Points": 12,
             "R": "I"
         }, {
-            "Time": "Spring 2014",
+            "Semester": "Spring 2014",
             "Subject": "BIOL",
             "Course": 213,
             "Level": "UG",
@@ -535,7 +535,7 @@
             "Quality Points": 16,
             "R": ""
         }, {
-            "Time": "Spring 2014",
+            "Semester": "Spring 2014",
             "Subject": "MATH",
             "Course": 114,
             "Level": "UG",
@@ -546,7 +546,7 @@
             "Quality Points": 16,
             "R": ""
         }, {
-            "Time": "Spring 2014",
+            "Semester": "Spring 2014",
             "Subject": "MATH",
             "Course": 125,
             "Level": "UG",
@@ -557,7 +557,7 @@
             "Quality Points": 12,
             "R": "I"
         }, {
-            "Time": "Spring 2014",
+            "Semester": "Spring 2014",
             "Subject": "NEUR",
             "Course": 327,
             "Level": "UG",
@@ -568,7 +568,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Spring 2014",
+            "Semester": "Spring 2014",
             "Subject": "PSYC",
             "Course": 375,
             "Level": "UG",
@@ -579,7 +579,7 @@
             "Quality Points": 11.01,
             "R": ""
         }, {
-            "Time": "Fall 2014",
+            "Semester": "Fall 2014",
             "Subject": "CHEM",
             "Course": 211,
             "Level": "UG",
@@ -590,7 +590,7 @@
             "Quality Points": 16,
             "R": ""
         }, {
-            "Time": "Fall 2014",
+            "Semester": "Fall 2014",
             "Subject": "NEUR",
             "Course": 689,
             "Level": "GR",
@@ -601,7 +601,7 @@
             "Quality Points": 12,
             "R": ""
         }, {
-            "Time": "Fall 2014",
+            "Semester": "Fall 2014",
             "Subject": "STAT",
             "Course": 535,
             "Level": "GR",
@@ -612,7 +612,7 @@
             "Quality Points": 11.01,
             "R": ""
         }, {
-            "Time": "Spring 2015",
+            "Semester": "Spring 2015",
             "Subject": "BIOL",
             "Course": 508,
             "Level": "GR",
@@ -623,7 +623,7 @@
             "Quality Points": 3.67,
             "R": ""
         }, {
-            "Time": "Spring 2015",
+            "Semester": "Spring 2015",
             "Subject": "BIOL",
             "Course": 690,
             "Level": "GR",
@@ -634,7 +634,7 @@
             "Quality Points": 3.33,
             "R": ""
         }, {
-            "Time": "Spring 2015",
+            "Semester": "Spring 2015",
             "Subject": "CHEM",
             "Course": 212,
             "Level": "UG",
@@ -645,7 +645,7 @@
             "Quality Points": 0,
             "R": ""
         }, {
-            "Time": "Spring 2015",
+            "Semester": "Spring 2015",
             "Subject": "NEUR",
             "Course": 689,
             "Level": "GR",
