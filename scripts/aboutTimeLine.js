@@ -74,12 +74,16 @@ aboutMe.filters = {
 
 //Draw Rectangles 
 aboutMe.drawRects = function(data){
+    const BAR_HEIGHT = 18;
     var numElements = data.length;
-    //var barHeight = 
+    
+    //SVG 
     aboutMe.svg
         .transition()
         .duration(aboutMe.TRANS_DUR)
         .attr("height", numElements*20);
+
+    //BAR/RECT ELEMENTS 
     var rects =  aboutMe.svg.selectAll("rect")
         .data(data, function(d) { return d["Subject"]+"_"+d["Course"]; });
     rects.enter()
@@ -87,13 +91,16 @@ aboutMe.drawRects = function(data){
         .attr("class", "classRects")
         .attr("id", function(d){return d["Subject"]+"_"+d["Course"];})
         .attr("height", 20)
+        .on("mouseover", function(d, i) { toolTip(d, i); })
+        .on("mouseout", function() { toolTipHide(); })
     .merge(rects)
         .transition()
-        .duration(2000)
+        .duration(aboutMe.TRANS_DUR)
         .attr("width", function(d){ return d["Quality Points"]*40; })
-        .attr("transform", function(d, i){ return "translate("+0+", "+i*18+")"; });
+        .attr("transform", function(d, i){ return "translate("+0+", "+i*BAR_HEIGHT+")"; });
     rects.exit().remove();
 
+    //TEXT ELEMENTS
     var texts = aboutMe.svg.selectAll("text")
         .data(data, function(d) { return d["Subject"]+"_"+d["Course"]; });
     texts.enter()
@@ -103,10 +110,32 @@ aboutMe.drawRects = function(data){
     .merge(texts)
         .text(function(d){return d["Subject"]+"_"+d["Course"];})
         .transition()
-        .duration(2000)
+        .duration(aboutMe.TRANS_DUR)
         .attr("y", 17)//function(d,i){return i*18; })
         .attr("transform", function(d, i){ return "translate("+0+", "+i*18+")"; });
     texts.exit().remove();
+
+    //X-AXIS
+
+    //TOOLTIP
+    var tooltip = d3.select("#tooltip");
+    var pre = d3.select("#jsonContainer");
+    toolTip = function(d, i){
+        var outPut = "";
+        for(var key in d){
+            outPut += key+": "+d[key]+". ";
+        }
+        console.log(outPut);
+        tooltip.classed("hidden", false)
+            .style("top", (i*BAR_HEIGHT)+"px")
+            .style("left", event.pageX-15+"px")
+            .text(outPut);
+    };
+    toolTipHide = function(){
+        tooltip.classed("hidden", true);
+    };
+
+
 };
 
 //Update Data
