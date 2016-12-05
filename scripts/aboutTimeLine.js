@@ -21,7 +21,7 @@ aboutMe.dropDowns = {
 };
 
 //Ajax and Load
-d3.json("data/life.json", function(err, data){
+d3.json("data/life.json", function(err, data){ // MAIN INIT HERE
     if(err) console.log(err);
     aboutMe.classes = data.College.Classes;
     aboutMe.makeFilters(aboutMe.classes);
