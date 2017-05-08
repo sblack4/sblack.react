@@ -38,7 +38,7 @@ class RockinRouter extends React.Component<any, any> {
       <BrowserRouter basename={that.props.basePath}>
         <div>
           <NavBar PagesList={that.props.pages} />
-          <a className="forkMe" href="https://github.com/sblack4/sblack.react">
+          <a className="forkMe" href="https://github.com/sblack4/sblack4.github.io">
             <img className="forkMe" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on Github" />
           </a>
             <main className="app-body">
