@@ -1,0 +1,18 @@
+#hiking {
+    width: 80vw;
+    transform: rotate(1deg);
+    margin-bottom: 10vh;
+}
+
+@media (min-width: 768px) {
+    #hiking {
+        width: 40vw;
+    }
+}
+
+.aboutBody {
+    text-indent: 1em;
+    padding: 2em 2em 2em 0em;
+    font-weight: 500;
+    line-height: 1.8;
+}

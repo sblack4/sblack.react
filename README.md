@@ -1,9 +1,8 @@
-# sblack4.github.io
+# sblack.react
 
-## Welcome to my humble abode 
+based off [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)
 
-    Get it! Got it? Good!
-
-    if you have python3 use `python -m http.server` to start.  
-
-    browser-syn is also great `browser-sync start --server --files "*"`
+```javascript
+npm install
+npm start
+```

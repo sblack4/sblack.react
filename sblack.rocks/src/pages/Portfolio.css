@@ -1,0 +1,39 @@
+.portfolioIntro {
+    margin-bottom: 2em;
+}
+
+#messyBabyCheesing {
+    width: 35vw;
+    margin-left: 1em;
+}
+
+.portfolioContent {
+    /*position: fixed;*/
+    left: 5px;;
+    width: 99vw;
+    z-index: 2;
+    margin-bottom: 3em;
+}
+
+.portfolioRow:nth-child(odd) {
+    background-color: #b2e7ff;
+    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.portfolioRow:nth-child(even) {
+    background-color: #b2e7ff;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.plx {
+    z-index: 0;
+    height: 100px;
+    background-attachment: fixed;
+    background-position: left top;
+    background-repeat: round;
+    position: relative;
+    width: 150vw;
+    left: -25vw;
+}

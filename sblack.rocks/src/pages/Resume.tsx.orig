@@ -1,0 +1,96 @@
+import * as React from "react";
+import { Col, PageHeader, Row } from "react-bootstrap";
+import "./Resume.css";
+
+class Resume extends React.Component<any, any> {
+  constructor(props: any) {
+    super(props);
+  }
+  timeAtCarahsoft() {
+    const startDate: Date = new Date(2016, 2, 15);
+    const now: Date = new Date();
+    const years: number = now.getFullYear() - startDate.getFullYear();
+    let months: number = now.getMonth() - startDate.getMonth();
+    months += (now.getDate() >= startDate.getDate()) ? 1 : 0;
+    return (
+      <p>{years} Years and {months} Months</p>
+    );
+  }
+  render() {
+    return (
+      <div className="about">
+<<<<<<< HEAD
+        <PageHeader>
+          Resume
+          </PageHeader>
+        <Row className="flexRow">
+          <Col xs={10} sm={8}>
+            <p>
+              Currently I'm <b>Data Science program manager</b> at&nbsp;
+              <a target="blank" href="http://www.carahsoft.com/">Carahsoft Technology Corp.</a>
+            </p>
+            <p className="paragraph">
+                I wear many hats which keeps me on my toes.
+                Most of my job involves working with our <b>SQL</b> databases 
+                (mostly T-SQL), which has earned me the nick-name "SQL-Wan Kenobi",   
+                but most of all I enjoy programming.  
+                Although my roots are with <b>python</b> I've come to trust the compiler and 
+                do almost all of my work in either <b>C#</b> (framework and core) or <b>Typescript</b>.  
+            </p>
+            <p className="paragraph">
+                My projects have been diverse; 
+                creating a <b>web-app</b> to display stats on monitors placed around the office
+                , building mail service applications
+                , maintaining our <b>CRM</b>
+                , administering <b>Windows</b> and <b>Linux</b> servers
+                , working with <b>Tableau</b>/<b>Qlik</b>/<b>ZoomData</b>/<b>Splunk</b>/VBA in Excel
+                , etc. etc. etc...
+=======
+        <div id= "headerRow" className="row">
+          <div className="col-lg-12">
+            <div className="page-header">
+              <h1>Resume</h1>
+            </div>
+          </div>
+        </div>
+        <div id="bodyRow" className="row">
+          Data analytics & VISUALIZATION program manager,
+    Carahsoft Technology Corp.
+  I work closely with the IT team where we keep Carahsoft running!
+  I specifically interface with other teams to come up with questions that can be answered by data
+  , investigate our data using a number of tools, and create data products that they can integrate into their existing solutions.
+  I work with a variety of tools including;
+    Python, Javascript, VBA, C#, SQL, HTML, PHP, R and several libraries of the aforementioned languages.
+>>>>>>> 1b433bcf5e9b2fc8b2f1b39237c1a9e2fff3be94
+
+            </p>
+          </Col>
+          <Col xs={2} sm={4} className="timeSpan">
+            <div>
+              <p>2016-Present </p>
+              {this.timeAtCarahsoft()}
+            </div>
+          </Col>
+        </Row>
+        <br />
+        <Row className="flexRow">
+          <Col xs={10} sm={8}>
+            <p>
+              Data sci cert
+            </p>
+            <p className="paragraph">
+                what
+            </p>
+          </Col>
+          <Col xs={2} sm={4} className="timeSpan">
+            <div>
+              <p>2016</p>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    );
+  }
+}
+
+export { Resume };

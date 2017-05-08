@@ -1,0 +1,16 @@
+i.fa {
+    text-decoration: none;
+    color: black;
+    margin-right: .5em;
+    font-size: 1.2em;
+}
+
+.contactOptions {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.contactItem {
+    margin: 1em 0 0 0;
+}

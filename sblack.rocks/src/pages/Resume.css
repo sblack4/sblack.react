@@ -1,0 +1,48 @@
+.paragraph {
+    text-indent: 3em;
+}
+
+.timeSpan {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.resumeItem:nth-child(odd) {
+    background: #fafafa;
+}
+
+.flexRow {
+    display: flex;
+}
+
+.title {
+    margin: 1em 1em 0.5em 1em;
+}
+
+.itemRow {
+    margin: 0em 1em 2em 1em;
+}
+
+.resumeItemRow {
+    margin-bottom: 5vh;
+}
+
+#carahLogo {
+    opacity: .9;
+    margin-top: 0.5em;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    #carahLogo {
+        padding-left: 30px;
+    }
+}
+
+/* laptop sized */
+@media screen and (min-width: 992px) {
+    .timeSpan>div {
+        padding-left: 60px;
+    }
+}

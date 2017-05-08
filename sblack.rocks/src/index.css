@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+}
+
+#root {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.forkMe {
+    visibility: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+@media(min-width: 768px) {
+    .forkMe {
+        visibility: visible;
+    }
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-leave {
+    opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}

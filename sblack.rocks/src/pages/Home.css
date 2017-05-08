@@ -1,0 +1,12 @@
+#imgOnDock {
+    max-height: 40vh;
+    transform: rotate(1deg);
+    image-rendering: crisp-edges;
+}
+
+.homeBody {
+    text-indent: 1em;
+    padding: 5em 1em 0 1em;
+    font-weight: 500;
+    line-height: 1.8;
+}
