@@ -1,4 +1,4 @@
-# sblack.react
+# sblack4.github.io
 
 based off [create-react-app-typescript](https://github.com/wmonk/create-react-app-typescript)
 
