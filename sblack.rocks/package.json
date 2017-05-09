@@ -48,7 +48,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
-    "build-deploy": "npm run build && cp -r -v ./build/* ../",
+    "build-deploy": "npm run build && rm -r ../static/ && cp -r -v ./build/* ../",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "predeploy": "npm run build",

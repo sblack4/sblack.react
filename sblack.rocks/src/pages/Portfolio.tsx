@@ -46,8 +46,8 @@ class Portfolio extends React.Component<any, any> {
               </p>
             </Col>
             <Col xs={10} smOffset={0} sm={6} md={5}>
-              <img id="messyBabyCheesing" 
-                src={process.env.PUBLIC_URL + "/messyBabyCheesing.jpg"} alt="The cutest and messiest baby ever <3" 
+              <img id="messyBabyCheesing"
+                src={process.env.PUBLIC_URL + "/messyBabyCheesing.JPG"} alt="The cutest and messiest baby ever <3" 
               />
             </Col>
           </Row>
@@ -55,7 +55,7 @@ class Portfolio extends React.Component<any, any> {
             <h3> TVs </h3>
             <p>text</p>
             <img id="messyBabyCheesing" 
-                src={process.env.PUBLIC_URL + "/IMG_2813.jpg"} alt="" 
+                src={process.env.PUBLIC_URL + "/IMG_2813.JPG"} alt="" 
               />
           </PortfolioItem>
           <PortfolioItem>
@@ -65,7 +65,7 @@ class Portfolio extends React.Component<any, any> {
           <PortfolioItem>
             <h3> Microsoft Data Science Certificate </h3>
             <p>text</p>
-            <object data={process.env.PUBLIC_URL + "/Certificate.pdf"} type="application/pdf">
+            <object data={process.env.PUBLIC_URL + "/Certificate.pdf"}>
             <iframe
                 src={process.env.PUBLIC_URL + "/Certificate.pdf"} alt="" 
               />
