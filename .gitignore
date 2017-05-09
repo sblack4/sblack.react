@@ -2,3 +2,4 @@ $ cat .gitignore
 ## because I used VisualStudioCode
 .vscode/
 /miscIgnore/
+~*

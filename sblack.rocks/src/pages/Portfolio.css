@@ -2,11 +2,6 @@
     margin-bottom: 2em;
 }
 
-#messyBabyCheesing {
-    width: 35vw;
-    margin-left: 1em;
-}
-
 .portfolioContent {
     /*position: fixed;*/
     left: 5px;;
@@ -36,4 +31,37 @@
     position: relative;
     width: 150vw;
     left: -25vw;
+}
+
+#messyBabyCheesing {
+    width: 35vw;
+    margin-left: 1em;
+}
+
+#tvHowTo {
+    text-indent: 0px;
+    margin-bottom: 5px;
+}
+#tvHowTo li {
+    margin-top: 3px;
+}
+
+#tvsPic {
+    width: 35vw;
+    margin-left: 1em; 
+}
+
+#emailServicePic {
+    width: 35vw;
+    margin-left: 1em; 
+}
+
+#certDiv {
+    width: 50vw;
+    /*height: 100%;*/
+}
+
+#certObject {
+    width: 100%;
+    height: 100%;
 }
