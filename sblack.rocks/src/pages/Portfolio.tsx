@@ -90,14 +90,18 @@ class Portfolio extends React.Component<any, any> {
           </PortfolioItem>
           <PortfolioItem>
             <h3> Email Services </h3>
-            <p className="paragraph">
-              I've actually set up a few of these. Some are simple cron-jobs for one-off reports pulling from a non-standard database
+            <Col xs={5}>
+              <p className="paragraph">
+                I've actually set up a few of these. Some are simple cron-jobs for one-off reports pulling from a non-standard database
               One is a full service that pulls variable reports which you can design in a WPF GUI.  The requests I've gotten for these
               reports have truly tested my SQL-fu.
             </p>
-            <img id="emailServicePic"
-              src={process.env.PUBLIC_URL + "/emailService.PNG"} alt="An email"
-              />
+            </Col>
+            <Col xs={5}>
+              <img id="emailServicePic"
+                src={process.env.PUBLIC_URL + "/emailService.PNG"} alt="An email"
+                />
+            </Col>
           </PortfolioItem>
           <PortfolioItem>
             <h3> Microsoft Data Science Certificate </h3>
@@ -112,7 +116,7 @@ class Portfolio extends React.Component<any, any> {
               &nbsp;<a href="https://github.com/sblack4/Applied-Machine-Learning">https://github.com/sblack4/Applied-Machine-Learning</a>
               , and
               &nbsp;<a href="https://github.com/sblack4/Principles-Of-Machine-Learning">
-              https://github.com/sblack4/Principles-Of-Machine-Learning</a>
+                https://github.com/sblack4/Principles-Of-Machine-Learning</a>
             </p>
             <div id="certDiv">
               <object id="certObject" data={process.env.PUBLIC_URL + "/Certificate.pdf"} type="application/pdf">
