@@ -9,7 +9,7 @@ class PortfolioItem extends React.Component<any, any> {
   render() {
     return (
       <Row className="show-grid">
-        <div className="portfolioRow plx" />
+        <div className="portfolioRow plx" style={{backgroundImage: `url(${process.env.PUBLIC_URL}"3px-tile.png")`}}/>
         <Row className="portfolioContent">
           <Col xs={11}>
             {this.props.children}
@@ -109,7 +109,8 @@ class Portfolio extends React.Component<any, any> {
               Machine Learning is absolutely fascinating so when I head Microsoft was putting their name on a course, which
               was reasonably priced, I had to try it.  Overall I learned a LOT about advanced Excel and SQL (which is pretty
               amazing considering I was already an expert in both) but didn't take away much new knowledge in Machine Learning
-              other than how to use Azures machine learning platform.
+              other than how to use Azures machine learning platform. I did get to practice working with python's pandas
+              and scikit-learn though :).
               I've kept a few of the forked repositories from the courses which have some of my code at
               &nbsp;<a href="https://github.com/sblack4/Data-Science-Essentials">https://github.com/sblack4/Data-Science-Essentials</a>,
               &nbsp;<a href="https://github.com/sblack4/DAT210x">https://github.com/sblack4/DAT210x</a>,
@@ -138,13 +139,37 @@ class Portfolio extends React.Component<any, any> {
               &nbsp;<a href="https://github.com/sblack4/sblack4.github.io">https://github.com/sblack4/sblack4.github.io</a>
             </p>
             <p className="paragraph">
-              Hosting it was also fun, I ended up using the Google Cloud compute engine so I could write the redirect rules
+              Hosting it was also fun, I ended up using the Google Cloud compute engine so I could practice secure hosting with apache
               and use SSL on my own domain at
               &nbsp;<a href="https://sblack.rocks">https://sblack.rocks</a>&nbsp;
               This site is also hosted on github at
-              &nbsp;<a href="https://sblack4.github.io">https://sblack4.github.io</a>
+              &nbsp;<a href="https://sblack4.github.io">https://sblack4.github.io</a>&nbsp;
             </p>
           </PortfolioItem>
+
+          <PortfolioItem>
+            <h3> Advanced SQL Queries </h3>
+            <p className="paragraph">
+              Coming soon!
+              {/*use that call query and maybe the data viz*/}
+            </p>
+          </PortfolioItem>
+
+          <PortfolioItem>
+            <h3> Data Information Tools: Qlik, Tableau, Splunk, Zoomdata </h3>
+            <p className="paragraph">
+              Coming soon!
+              {/*find those Qlik dashboard pics*/}
+            </p>
+          </PortfolioItem>
+          <PortfolioItem>
+            <h3> Handyman Extraordinaire </h3>
+            <p className="paragraph">
+              Coming soon!
+              {/*vba functions are cool, so is bash scripts*/}
+            </p>
+          </PortfolioItem>
+          <div style={{height: "5em"}}></div>
         </Grid>
       </div>
     );

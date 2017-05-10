@@ -10,17 +10,10 @@
     margin-bottom: 3em;
 }
 
-.portfolioRow:nth-child(odd) {
+.portfolioRow {
     background-color: #b2e7ff;
-    background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.portfolioRow:nth-child(even) {
-    background-color: #b2e7ff;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
 
 .plx {
     z-index: 0;
