@@ -80,15 +80,16 @@ class Resume extends React.Component<any, any> {
               Overview
             </ResumeItemTitle>
             <ResumeItemBody timeElement={<div>
-              {/*<p>Dates</p>Timespan*/}
               </div>}>
               <p className="paragraph">
                 I'm currently open to positions in Data Science and Programming.  
                 The particular role is not so important as is finding the right fit: 
-                I'm looking to develop my skills so need a challenging role at company that invests in its employees.  
+                I'm looking to develop my skills so need a challenging role at company that invests in its employees.
               </p>
-              <p className="paragraph">
-                {/*Test Body 2*/}
+              <p>
+                You can download my resume as a 
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.pdf"} download>pdf</a>&nbsp; or 
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.docx"} download>word document</a>.
               </p>
             </ResumeItemBody>
           </ResumeItemRow>
