@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Col, Grid, PageHeader, Row } from "react-bootstrap";
 import "./Resume.css";
-// tslint:disable
 
 class ResumeItemTitle extends React.Component<any, any> {
   constructor(props: any) {
@@ -87,9 +86,9 @@ class Resume extends React.Component<any, any> {
                 I'm looking to develop my skills so need a challenging role at company that invests in its employees.
               </p>
               <p>
-                You can download my resume as a 
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.pdf"} download>pdf</a>&nbsp; or 
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.docx"} download>word document</a>.
+                You can download a more concise resume as a 
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.pdf"} download>pdf</a>&nbsp; or
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.docx"} download>word document</a>.
               </p>
             </ResumeItemBody>
           </ResumeItemRow>
@@ -161,12 +160,14 @@ class Resume extends React.Component<any, any> {
                 <i>Python for Informatics</i> Book & Coursera courses
                 , completed <a href="https://academy.microsoft.com/en-us/certificates/d5684e05-1963-412f-971a-86da6fb49a83">
                   Microsoft's Data Science Program</a>, and get to munge data at work.  
-                  I have a keen interest in <b>Machine Learning</b> but for the time being that is mostly a hobby.  
+                  I have a keen interest in <b>Machine Learning</b> but for the time being that is mostly a hobby.
               </p>
               <p className="paragraph">
                 <h4>Web Dev</h4>
                 Writing SPAs in Typescript, <b>D3</b>, and <b>React</b> is easily 50% of my job. I could not have done it 
-                without Chrome DevTools, Codecademy, & CodeSchool! When it comes to back ends I like to use .Net for production, flask for pilots, and express/ webpack-dev-server for development.  
+                without Chrome DevTools, Codecademy, & CodeSchool!
+                When it comes to back ends I like to use .Net for production
+                , flask for pilots, and express/ webpack-dev-server for development.
                 I also love the simplicity of centos/Apache but working in a .Net shop I rely heavily on Windows Server/IIs.
               </p>
               <p className="paragraph">
@@ -199,7 +200,16 @@ class Resume extends React.Component<any, any> {
               </div>
               }>
               <p className="paragraph">
-                I performed bench-work doing cell culture, proteomics, live cell calcium imaging, as well as a host of other molecular-biology assays. The bulk of my work was in hypothesis testing and data-visualization, working in Excel, R, and SPSS. I presented a poster at the Society for Neuroscience Annual Meeting which summarized my work titled “Cytoskeletal motility and structural growth in developing neural cells is driven by α7- nicotinic acetylcholine receptor association with G proteins”.  Although neuroscience is fascinating my work was all theory and no application which left me yearning for a more practical challenge.  With the upcoming birth of my son I left grad school to pursue data-science.   
+                I performed bench-work doing cell culture, proteomics
+                , live cell calcium imaging, as well as a host of other molecular-biology assays.
+                The bulk of my work was in hypothesis testing and data-visualization,
+                 working in Excel, R, and SPSS. I presented a poster at the Society for
+                 Neuroscience Annual Meeting which summarized my work titled “Cytoskeletal
+                 motility and structural growth in developing neural cells is driven by
+                 α7- nicotinic acetylcholine receptor association with G proteins”.  
+                 Although neuroscience is fascinating my work was all theory and no 
+                 application which left me yearning for a more practical challenge.  With 
+                 the upcoming birth of my son I left grad school to pursue data-science.
               </p>
             </ResumeItemBody>
           </ResumeItemRow>

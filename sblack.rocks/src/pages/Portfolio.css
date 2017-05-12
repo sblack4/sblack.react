@@ -27,7 +27,7 @@
 }
 
 #messyBabyCheesing {
-    width: 35vw;
+    width: 60vw;
     margin-left: 1em;
 }
 
@@ -57,4 +57,11 @@
 #certObject {
     /*width: 90%;*/
     height: 90%;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    #messyBabyCheesing {
+    width: 35vw;
+    }
 }

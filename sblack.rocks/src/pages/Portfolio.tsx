@@ -44,7 +44,8 @@ class Portfolio extends React.Component<any, any> {
                 the project of which I am most proud is named Elias, and pictured to the right (he's also the most fun).
                 If you would like specific samples or help
                 with something similar please email me at
-                &nbsp;<a href="mailto:genseb7@gmail.com">genseb7@gmail.com</a>
+                &nbsp;<a href="mailto:genseb7@gmail.com">genseb7@gmail.com</a>&nbsp;
+                (<i>note</i> I'm talking about coding & data science... not the baby!)
               </p>
             </Col>
             <Col xs={10} smOffset={0} sm={6} md={5}>
@@ -57,7 +58,7 @@ class Portfolio extends React.Component<any, any> {
             <h3> TVs </h3>
             <p className="paragraph">
               This is the coolest project I've completed so far!
-              We're installed 32 TVs around the office each with their own Asus stick.
+              We've installed 32 TVs around the office each with their own Asus stick.
             </p>
             <p className="paragraph">
               This is a multi-tiered project.  The TVs query a SQL database to see what they should be displaying at that point in time,
