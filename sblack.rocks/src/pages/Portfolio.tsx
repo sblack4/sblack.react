@@ -49,9 +49,11 @@ class Portfolio extends React.Component<any, any> {
               </p>
             </Col>
             <Col xs={10} smOffset={0} sm={6} md={5}>
-              <img id="messyBabyCheesing"
-                src={process.env.PUBLIC_URL + "/messyBabyCheesing.JPG"} alt="The cutest and messiest baby ever <3"
-                />
+              <img
+                id="messyBabyCheesing"
+                src={process.env.PUBLIC_URL + "/messyBabyCheesing.JPG"}
+                alt="The cutest and messiest baby ever <3"
+              />
             </Col>
           </Row>
           <PortfolioItem>
@@ -85,9 +87,11 @@ class Portfolio extends React.Component<any, any> {
                 </li>
               </ul>
             </p>
-            <img id="tvsPic"
-              src={process.env.PUBLIC_URL + "/IMG_2813.JPG"} alt="A few of our TVs"
-              />
+            <img
+              id="tvsPic"
+              src={process.env.PUBLIC_URL + "/IMG_2813.JPG"}
+              alt="A few of our TVs"
+            />
           </PortfolioItem>
           <PortfolioItem>
             <h3> Email Services </h3>
@@ -99,9 +103,11 @@ class Portfolio extends React.Component<any, any> {
             </p>
             </Col>
             <Col xs={5}>
-              <img id="emailServicePic"
-                src={process.env.PUBLIC_URL + "/emailService.PNG"} alt="An email"
-                />
+              <img
+                id="emailServicePic"
+                src={process.env.PUBLIC_URL + "/emailService.PNG"}
+                alt="An email"
+              />
             </Col>
           </PortfolioItem>
           <PortfolioItem>
@@ -122,11 +128,12 @@ class Portfolio extends React.Component<any, any> {
             </p>
             <div id="certDiv">
               <object id="certObject" data={process.env.PUBLIC_URL + "/Certificate.pdf"} type="application/pdf">
-                <iframe id="certIframe"
+                <iframe
+                  id="certIframe"
                   src={process.env.PUBLIC_URL + "/Certificate.pdf"}
-                  >
+                >
                   This browser does not support PDFs. Please download the PDF to view it:
-              <a href={process.env.PUBLIC_URL + "/Certificate.pdf"} download>Download PDF</a>
+              <a href={process.env.PUBLIC_URL + "/Certificate.pdf"} download="true">Download PDF</a>
                 </iframe>
               </object>
             </div>
@@ -151,26 +158,31 @@ class Portfolio extends React.Component<any, any> {
           <PortfolioItem>
             <h3> Advanced SQL Queries </h3>
             <p className="paragraph">
-              Coming soon!
+              During my time at Carahsoft I earned my black belt in SQL.  Obviously I can't post the
+               queries here but I take pride in my work and make sure to use the correct syntax as well
+               as comment appropriately.  If you'd like a sample I've managed to take a lot of complex data-mangling
+               out of our code and put them through a wringer of SQL SELECTs, PIVOTs, and CURSORs that will
+               make your head spin.  
               {/*use that call query and maybe the data viz*/}
             </p>
           </PortfolioItem>
 
           <PortfolioItem>
-            <h3> Data Information Tools: Qlik, Tableau, Splunk, Zoomdata </h3>
-            <p className="paragraph">
-              Coming soon!
-              {/*find those Qlik dashboard pics*/}
-            </p>
+              <h3> Data Information Tools: Qlik, Tableau, Splunk, Zoomdata </h3>
+              <p className="paragraph">
+                I'm comfortable with Splunk and Tableau. Most of my BI experience is with Qlik and Zoomdata. 
+                 Excel, which deserves credit for being a great data-browsing tool, is also a favorite of mine.
+                 For data exploration nothing can beat the simplicity and extensibility of Qlik.  
+                 I'm comfortable with all the built-in functions of Excel as well as pulling data into excel
+                 from other sources (ODBC, APIs, HTML), Power Query, and programming new function in VBA.
+              </p>
+              <img
+                id="Qlik_demo"
+                src={process.env.PUBLIC_URL + "/Qlik_Ex.PNG"}
+                alt="One Qlik Dashboard"
+              />
           </PortfolioItem>
-          <PortfolioItem>
-            <h3> Handyman Extraordinaire </h3>
-            <p className="paragraph">
-              Coming soon!
-              {/*vba functions are cool, so is bash scripts*/}
-            </p>
-          </PortfolioItem>
-          <div style={{height: "5em"}}></div>
+          <div style={{height: "5em"}} />
         </Grid>
       </div>
     );

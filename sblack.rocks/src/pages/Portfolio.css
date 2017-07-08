@@ -58,6 +58,10 @@
     /*width: 90%;*/
     height: 90%;
 }
+#Qlik_demo {
+    width: 35vw;
+    margin-left: 1em; 
+}
 
 /* tablet */
 @media (min-width: 768px) {

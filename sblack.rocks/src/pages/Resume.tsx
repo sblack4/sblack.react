@@ -22,7 +22,8 @@ class ResumeItemBody extends React.Component<any, any> {
     super(props);
   }
   render() {
-    return (<Row className="flexRow itemRow">
+    return (
+    <Row className="flexRow itemRow">
       <Col xs={10} sm={8}>
         {this.props.children}
       </Col>
@@ -47,7 +48,6 @@ class ResumeItemRow extends React.Component<any, any> {
   }
 }
 
-
 class Resume extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
@@ -66,6 +66,7 @@ class Resume extends React.Component<any, any> {
       <p>{timeSpan}</p>
     );
   }
+// tslint:disable:jsx-no-multiline-js
   render() {
     return (
       <div className="Resume">
@@ -78,8 +79,7 @@ class Resume extends React.Component<any, any> {
             <ResumeItemTitle>
               Overview
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={<div>
-              </div>}>
+            <ResumeItemBody timeElement={<div/>}>
               <p className="paragraph">
                 I'm currently open to positions in Data Science and Programming.  
                 The particular role is not so important as is finding the right fit: 
@@ -87,9 +87,35 @@ class Resume extends React.Component<any, any> {
               </p>
               <p>
                 You can download a more concise resume as a 
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.pdf"} download>pdf</a>&nbsp; or
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.docx"} download>word document</a>.
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.pdf"} download="true">pdf</a>&nbsp; or
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.docx"} download="true">word document</a>.
               </p>
+            </ResumeItemBody>
+          </ResumeItemRow>
+
+          {/* Oracle */}
+
+          <ResumeItemRow>
+            <ResumeItemTitle>
+              Currently I'm a <b>Solution Engineer</b>
+              <br />
+              <small>at <a target="blank" href="https://www.oracle.com/">Oracle Technology Corp.</a></small>
+              <br />
+              <img id="oracle_Logo" className="logo" src={process.env.PUBLIC_URL + "/Oracle_logo.png"} alt="Oracle Corp." />
+            </ResumeItemTitle>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>
+                    July 2017 - Present
+                    </p>
+                  {this.timeAtX(new Date(2017, 7, 10))}
+                </div>)
+              }
+            >
+              <p className="paragraph">
+                A new an exciting position! 
+            </p>
             </ResumeItemBody>
           </ResumeItemRow>
 
@@ -97,19 +123,22 @@ class Resume extends React.Component<any, any> {
 
           <ResumeItemRow>
             <ResumeItemTitle>
-              Currently I'm <b>Data Science program manager</b> at&nbsp;
-              <a target="blank" href="http://www.carahsoft.com/">Carahsoft Technology Corp.</a>
+              <b>Data Science program manager</b>
               <br />
-              <img id="carahLogo" src={process.env.PUBLIC_URL + "/carahLogo.png"} alt="Carahsoft Technology Corp." />
+              <small>at <a target="blank" href="http://www.carahsoft.com/">Carahsoft Technology Corp.</a></small>
+              <br />
+              <img id="carahLogo" className="logo" src={process.env.PUBLIC_URL + "/carahLogo.png"} alt="Carahsoft Technology Corp." />
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>
-                  Feb 2015 - Present
-                  </p>
-                {this.timeAtX(new Date(2016, 2, 15))}
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>
+                    Feb 2016 - July 2017
+                    </p>
+                  {this.timeAtX(new Date(2016, 2, 15), new Date(2017, 5, 30))}
+                </div>)
+              }
+            >
               <p className="paragraph">
                 Carahsoft is a dynamic work environment where I'm constantly changing teams and goals.
                 Most of my job involves working with our <b>SQL</b> databases
@@ -137,14 +166,15 @@ class Resume extends React.Component<any, any> {
             <ResumeItemTitle>
               <b>Autodidact</b> / PHD in Googling
               </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>
-                  1991 - Present
-                  </p>
-                {this.timeAtX(new Date(1991, 4, 25))}
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>
+                    1991 - Present
+                    </p>
+                  {this.timeAtX(new Date(1991, 4, 25))}
+                </div>)}
+            >
               <p className="paragraph">
                 This section serves in part to show that I've tried not to take shortcuts in my computer science education
               but also to thank the teachers I've never been able to (directly) thank. In fact, I learned
@@ -192,13 +222,17 @@ class Resume extends React.Component<any, any> {
               PHD Student & Researcher, Neuroscience
               <br />
               <small> Krasnow Institute for Advanced Study Under Nadine Kabbani </small>
+              <br />
+              <img id="krasnowLogo" className="logo" src={process.env.PUBLIC_URL + "/krasnow_logo.png"} alt="Oracle Corp." />
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>April 2014 - May 2015</p>
-                {this.timeAtX(new Date(2014, 4), new Date(2015, 5))}
-              </div>
-              }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>April 2014 - May 2015</p>
+                  {this.timeAtX(new Date(2014, 4), new Date(2015, 5))}
+                </div>
+                )}
+            >
               <p className="paragraph">
                 I performed bench-work doing cell culture, proteomics
                 , live cell calcium imaging, as well as a host of other molecular-biology assays.
@@ -221,15 +255,21 @@ class Resume extends React.Component<any, any> {
               B.S. Economics 
               <br />
               <small>George Mason University</small>
+              <br />
+              <img id="Gmu_Econ_Logo" className="logo" src={process.env.PUBLIC_URL + "/gmu_economics_logo.png"} alt="GMU Economics Dept" />
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>Aug 2009 – April 2014</p>
-                5 Years
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>Aug 2009 – April 2014</p>
+                  5 Years
+                </div>
+                )}
+            >
               <p className="paragraph">
-                I’m very curious and so enjoyed a significant amount course-work in IT, Economics, Math, Biology, Neuroscience, and Psychology but ultimately chose Economics because of its versatility in the job market and because the Economics professors at George Mason are second to none.   
+                I’m very curious and so enjoyed a significant amount course-work in IT, Economics, Math, Biology,
+                 Neuroscience, and Psychology but ultimately chose Economics because of its versatility in the job market
+                  and because the Economics professors at George Mason are second to none.   
               </p>
             </ResumeItemBody>
           </ResumeItemRow>
@@ -241,15 +281,20 @@ class Resume extends React.Component<any, any> {
               Psychology Research Assistant
               <br />
               <small>Human Factors & Applied Cognition Labs Under Drs. Matthew Peterson & Eric Blumberg</small>
+              <br />
+              <img id="arch_Logo" className="logo" src={process.env.PUBLIC_URL + "/arch_logo.png"} alt="GMU ARCH Lab" />
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>Aug 2012 - Dec 2013</p>
-                1 Year 5 Months
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>Aug 2012 - Dec 2013</p>
+                  1 Year 5 Months
+                </div>)}
+            >
               <p className="paragraph">
-                I worked mainly in the Eye-tracking lab but also trained with EEG and TCDS. I ran human subjects through a series of tasks, recorded the data, and paid them as necessary. My work was mainly done to assess working memory inhibition by activation of the occipital lobe.
+                I worked mainly in the Eye-tracking lab but also trained with EEG and TCDS. I ran human subjects through a
+                 series of tasks, recorded the data, and paid them as necessary. My work was mainly done to assess working
+                  memory inhibition by activation of the occipital lobe.
 
               </p>
 
@@ -264,14 +309,16 @@ class Resume extends React.Component<any, any> {
               <br />
               <small>GMU Economics Department Under Drs. Dave Hebert and Thomas Stratman</small>
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>Feb 2013 – Aug 2013</p>
-                1 Year and 2 Months
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>Feb 2013 – Aug 2013</p>
+                  1 Year and 2 Months
+                </div>)}
+            >
               <p className="paragraph">
-                I crawled the internet for data on timberlands in the northwest United States. Then the data was curated and parsed into .xlsx format. The project was investigating the tragedy of the anti-commons.
+                I crawled the internet for data on timberlands in the northwest United States. Then the data was curated and
+                 parsed into .xlsx format. The project was investigating the tragedy of the anti-commons.
               </p>
 
             </ResumeItemBody>
@@ -284,15 +331,20 @@ class Resume extends React.Component<any, any> {
               Disney College Program
               <br />
               <small>Walt Disney World Resort, Orlando Florida </small>
+              <br />
+              <img id="disney_Logo" className="logo" src={process.env.PUBLIC_URL + "/disneyWorld_logo.png"} alt="Disney World" />
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={
-              <div>
-                <p>Feb 2013 - May 2013</p>
-                4 Months
-              </div>
-            }>
+            <ResumeItemBody
+              timeElement={(
+                <div>
+                  <p>Feb 2013 - May 2013</p>
+                  4 Months
+                </div>)
+              }
+            >
               <p className="paragraph">
-                Operated rollercoaster, Expedition Everest, in Animal Kingdom. I had the opportunity to learn from the worlds experts in customer service and have a blast 
+                Operated rollercoaster, Expedition Everest, in Animal Kingdom. I had the opportunity to learn from the
+                 worlds experts in customer service and have a blast 
               </p>
             </ResumeItemBody>
           </ResumeItemRow>
@@ -302,9 +354,7 @@ class Resume extends React.Component<any, any> {
             <ResumeItemTitle>
               {/*Test Title*/}
             </ResumeItemTitle>
-            <ResumeItemBody timeElement={<div>
-              {/*<p>Dates</p>Timespan*/}
-              </div>}>
+            <ResumeItemBody timeElement={<div/>}>
               <p className="paragraph">
                 {/*Test Body 1*/}
               </p>

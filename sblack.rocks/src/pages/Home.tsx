@@ -18,7 +18,7 @@ class Home extends React.Component<any, any> {
             <Col sm={4} md={6}>
               <p className="homeBody">
                 Thanks for taking an interest in me.  I hope this page helps you
-            , whether you're building your own website or trying to fill a job vacancy. 😉
+            , whether you're building your own website or looking for a contact with data, web, and security skills.
             <br/>
              In either case please feel free to drop me an email.
           </p>
