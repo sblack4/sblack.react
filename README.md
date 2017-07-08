@@ -7,9 +7,10 @@ based off [create-react-app-typescript](https://github.com/wmonk/create-react-ap
 npm install
 ```
 2. start the dev server 
-`npm start`
+`npm run start`
 3. declare done and publish 
-`npm build`
+`npm run build-deploy`
+this also copies everything over to the front of the master branch.  There was a reason behind this that I have since forgotten. TODO will fix
 4. let git know everything's good
 ```bash
 git add .
