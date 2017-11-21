@@ -57,6 +57,36 @@ class Portfolio extends React.Component<any, any> {
             </Col>
           </Row>
           <PortfolioItem>
+            <h3> Big Data Deployments </h3>
+            <Col xs={5}>
+              <p className="paragraph">
+                Hortonworks  coming soon
+            </p>
+            </Col>
+            <Col xs={5}>
+              <img
+                id="hadoopPic"
+                src={process.env.PUBLIC_URL + "/hadooop.jpg"}
+                alt="hadoop <3"
+              />
+            </Col>
+          </PortfolioItem>
+          <PortfolioItem>
+            <h3> Web Scraper </h3>
+            <Col xs={5}>
+              <p className="paragraph">
+                Python web scraper, details coming soon
+            </p>
+            </Col>
+            {/* <Col xs={5}>
+              <img
+                id="emailServicePic"
+                src={process.env.PUBLIC_URL + "/emailService.PNG"}
+                alt="An email"
+              />
+            </Col> */}
+          </PortfolioItem>
+          <PortfolioItem>
             <h3> TVs </h3>
             <p className="paragraph">
               This is the coolest project I've completed so far!

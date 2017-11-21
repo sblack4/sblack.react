@@ -1,39 +1,7 @@
 import * as React from "react";
 import { Col, Grid, PageHeader, Row } from "react-bootstrap";
 import "./Resume.css";
-
-class ResumeItemTitle extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-  }
-  render() {
-    return (
-      <Row className="flexRow titleRow">
-        <h3 className="title">
-          {this.props.children}
-        </h3>
-      </Row>
-    );
-  }
-}
-
-class ResumeItemBody extends React.Component<any, any> {
-  constructor(props: any) {
-    super(props);
-  }
-  render() {
-    return (
-    <Row className="flexRow itemRow">
-      <Col xs={10} sm={8}>
-        {this.props.children}
-      </Col>
-      <Col xs={2} sm={4} className="timeSpan">
-        {this.props.timeElement}
-      </Col>
-    </Row>
-    );
-  }
-}
+import { ResumeItemBody, ResumeItemTitle } from "./ResumeClass";
 
 class ResumeItemRow extends React.Component<any, any> {
   constructor(props: any) {
@@ -75,20 +43,22 @@ class Resume extends React.Component<any, any> {
           </PageHeader>
         <Grid className="resumeItems">
 
+          {/* Overview */}
+
           <ResumeItemRow>
             <ResumeItemTitle>
               Overview
             </ResumeItemTitle>
             <ResumeItemBody timeElement={<div/>}>
               <p className="paragraph">
-                I'm currently open to positions in Data Science and Programming.  
-                The particular role is not so important as is finding the right fit: 
-                I'm looking to develop my skills so need a challenging role at company that invests in its employees.
+                I've just accepted a position from Oracle and am finally going back to school to get a degree 
+                related to my job! In the future I hope to pursue my PHD so if you're interested in collaborating 
+                on any research topic I'd be more than happy to donate my time. 
               </p>
               <p>
                 You can download a more concise resume as a 
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.pdf"} download="true">pdf</a>&nbsp; or
-                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack Resume.docx"} download="true">word document</a>.
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.pdf"} download="true">pdf</a>&nbsp; or
+                 &nbsp;<a href={process.env.PUBLIC_URL + "StevenBlack_Resume.docx"} download="true">word document</a>.
               </p>
             </ResumeItemBody>
           </ResumeItemRow>
@@ -97,7 +67,7 @@ class Resume extends React.Component<any, any> {
 
           <ResumeItemRow>
             <ResumeItemTitle>
-              Currently I'm a <b>Solution Engineer</b>
+              Currently I'm a <b>Cloud Solution Engineer</b> on the Information Management Team
               <br />
               <small>at <a target="blank" href="https://www.oracle.com/">Oracle Technology Corp.</a></small>
               <br />
@@ -114,7 +84,14 @@ class Resume extends React.Component<any, any> {
               }
             >
               <p className="paragraph">
-                A new an exciting position! 
+                Most of my work is centered around <b>Big Data; Hadoop, Spark, Hive, and Kafka</b>. 
+                I'm fortunate enough that I get to work with the <b>Hortonworks</b> and <b>Cloudera</b> platforms 
+                as well as Oracle's own distributions. Occasionally I get a projects with Oracle's RDBMS and 
+                new (some that haven't even been released yet!) products. 
+            </p>
+            <p className="paragraph">
+              I also get the chance to work on many other cool projects that include producing <b>workshops</b>, 
+              <b>solution architectures</b>, <b>python web-crawlers</b>, and <b>nodejs</b> projects. 
             </p>
             </ResumeItemBody>
           </ResumeItemRow>
@@ -164,7 +141,7 @@ class Resume extends React.Component<any, any> {
 
           <ResumeItemRow>
             <ResumeItemTitle>
-              <b>Autodidact</b> / PHD in Googling
+              <b>Autodidact</b> / PHD in asking Questions
               </ResumeItemTitle>
             <ResumeItemBody
               timeElement={(

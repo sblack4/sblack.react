@@ -21,13 +21,13 @@ class Contact extends React.Component<any, any> {
                   </a>
                 </p>
                 <p className="contactItem">
-                  <a href="https://www.linkedin.com/in/steven-black-54a5396a/">
+                  <a href="https://www.linkedin.com/in/steven-black/">
                     <i className="fa fa-linkedin" aria-hidden="true" />
                     linkedin.com/in/steven-black
                   </a>
                 </p>
                 <p className="contactItem">
-                  <a href="https://medium.com/@stevenblack_53168">
+                  <a href="https://medium.com/@sblack4">
                     <i className="fa fa-medium" aria-hidden="true" />
                     medium.com/@stevenblack
                   </a>
