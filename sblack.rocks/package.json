@@ -4,9 +4,9 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/sblack4/sblack4.github.io.git"
+    "url": "https://github.com/sblack4/sblack.rocks.old.git"
   },
-  "homepage": "http://sblack.rocks",
+  "homepage": "https://github.com/sblack4/sblack.rocks.old.git",
   "keywords": [
     "react",
     "typescript",
