@@ -12,19 +12,6 @@ body {
     margin: 0px;
 }
 
-.forkMe {
-    visibility: hidden;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-}
-
-@media(min-width: 768px) {
-    .forkMe {
-        visibility: visible;
-    }
-}
-
 .fade-enter {
     opacity: 0;
     z-index: 1;
